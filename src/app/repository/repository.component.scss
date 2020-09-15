@@ -1,0 +1,38 @@
+.repo-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100px 2fr;
+  margin-bottom: 20px;
+}
+.avatar{
+  display: grid;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+.details{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 30px 30px 20px;
+}
+.repo-name{
+  line-height: 30px;
+  margin: 0px;
+}
+.repo-description{
+  line-height: 30px;
+  margin: 0px;
+}
+.stats{
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: flex-start;
+  width: fit-content;
+  line-height: 20px;
+  font-size: 14px;
+  color: darkgrey;
+}
+.stars, .open-issues{
+  width: fit-content;
+  margin-right: 10px;
+}

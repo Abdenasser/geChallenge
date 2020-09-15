@@ -1,0 +1,22 @@
+<div class="repo-container">
+  <img
+    class="avatar"
+    [src]="repo?.owner.avatar_url"
+    [title]="repo?.owner.login"
+  />
+  <div class="details">
+    <h3 class="repo-name">{{ repo?.name }}</h3>
+    <p class="repo-description">{{ repo?.description }}</p>
+    <div class="stats">
+      <button class="stars">
+        stars: {{ repo?.stargazers_count }}
+      </button>
+      <button class="open-issues">
+        issues: {{ repo?.open_issues }}
+      </button>
+      <div class="created-at">
+        Submitted {{ repo?.created_at }} by {{ repo?.owner.login }}
+      </div>
+    </div>
+  </div>
+</div>
