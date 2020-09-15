@@ -1,2 +1,10 @@
-<app-repository *ngFor="let repo of repos$ | async" [repo]="repo">
-</app-repository>
+<div
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onScroll()"
+  [scrollWindow]="false"
+  style="height: 400px; overflow-y: scroll"
+>
+  <app-repository *ngFor="let repo of repos" [repo]="repo"></app-repository>
+</div>
