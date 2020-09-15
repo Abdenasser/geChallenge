@@ -15,7 +15,7 @@
         issues: {{ repo?.open_issues }}
       </button>
       <div class="created-at">
-        Submitted {{ repo?.created_at }} by {{ repo?.owner.login }}
+        Submitted {{ repo?.created_at | timeAgo }} by {{ repo?.owner.login }}
       </div>
     </div>
   </div>

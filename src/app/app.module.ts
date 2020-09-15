@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RepositoryComponent } from './repository/repository.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { TimeAgoPipe } from './pipes/time-ago.pipe';
 
 @NgModule({
-  declarations: [AppComponent, RepositoryComponent],
+  declarations: [AppComponent, RepositoryComponent, TimeAgoPipe],
   imports: [
     BrowserModule,
     AppRoutingModule,
